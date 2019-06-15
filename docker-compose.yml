@@ -11,7 +11,7 @@ services:
       - type: bind
         source: ./atlas_of_thrones.sql
         target: /docker-entrypoint-initdb.d/atlas_of_thrones.sql
-  atlas:
+  webapp:
     build: .
     ports:
       - "5000:5000"
