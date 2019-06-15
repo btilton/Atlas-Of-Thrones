@@ -1,0 +1,26 @@
+version: '3.7'
+services:
+  redis:
+    image: redis:alpine
+  postgis:
+    image: mdillon/postgis
+    environment:
+      POSTGRES_USER: patrick
+      POSTGRES_DB: atlas_of_thrones
+    volumes:
+      - type: bind
+        source: ./atlas_of_thrones.sql
+        target: /docker-entrypoint-initdb.d/atlas_of_thrones.sql
+  atlas:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/atlas-of-thrones
+    ports:
+      - "5000:5000"
+      - "8080:8080"
+    depends_on:
+      - redis
+      - postgis
+    command: ./wait-for.sh postgis:5432 -- npm run dev
