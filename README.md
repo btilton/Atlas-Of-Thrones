@@ -1,6 +1,6 @@
 # Atlas-Of-Thrones-Dockerized
 
-An interactive "Game of Thrones" map powered by Leaflet, PostGIS, and Redis. This fork is can be started as a microservice stack with Docker Compose.
+An interactive "Game of Thrones" map powered by Leaflet, PostGIS, and Redis. This fork can be started as a microservice stack with Docker Compose.
 
 Visit the original project for a more complete README
 
