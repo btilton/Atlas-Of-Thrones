@@ -2,7 +2,7 @@
 
 An interactive "Game of Thrones" map powered by Leaflet, PostGIS, and Redis. This fork can be started as a microservice stack with Docker Compose.
 
-Visit the original project for a more complete README
+Visit the [original project](https://github.com/triestpa/Atlas-Of-Thrones) for a more complete README
 
 #### Requirements
 
