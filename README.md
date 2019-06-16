@@ -10,9 +10,9 @@ You must have Docker and Docker Compose installed.
 
 #### Setup
 
-To setup the project, simply download or clone the project to your local machine. Run the included `start-atlas.sh` shell script to start the webapp. The script will fetch the sql dump file and start the containers.
+Simply download or clone the project to your local machine and run the included `start-atlas.sh` shell script to start the webapp. The script will fetch the sql dump file and start the containers.
 
-Visit localhost:8080 to view the webapp and the geojson is available at localhost:5000.
+Visit localhost:8080 to view the webapp and the geojson API is available at localhost:5000. Some example API endpoints are localhost:5000/kingdoms and localhost:5000/locations/city
 
 ___
 
